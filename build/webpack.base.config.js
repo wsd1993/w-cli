@@ -4,6 +4,10 @@ const webpack = require('webpack')
 const config = require('../config')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+function resolve (dir) {
+    return path.join(__dirname, '..', dir)
+}
+
 module.exports = {
     context: path.resolve(__dirname, '../'),
     entry: {
@@ -33,6 +37,20 @@ module.exports = {
                         : MiniCssExtractPlugin.loader,
                     'css-loader'
                 ]
+            },
+            {
+                test: /.\js$/,
+                loader: 'babel-loader',
+                include: [resolve('src'), resolve('test')]
+            },
+            {
+                test: /.\vue$/,
+                loader: 'vue-loader',
+                options: {
+                    loaders: {
+                        
+                    }
+                }
             }
         ]
     },
