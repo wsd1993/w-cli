@@ -1,0 +1,39 @@
+{
+  "name": "w-cli",
+  "version": "1.0.0",
+  "description": "a background management system",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wsd1993/w-cli.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "wsd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wsd1993/w-cli/issues"
+  },
+  "homepage": "https://github.com/wsd1993/w-cli#readme",
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "mini-css-extract-plugin": "^0.6.0",
+    "portfinder": "^1.0.20",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.31.0",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
+  }
+}
